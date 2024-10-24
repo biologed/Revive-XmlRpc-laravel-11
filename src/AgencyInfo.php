@@ -10,7 +10,7 @@
 +---------------------------------------------------------------------------+
 */
 
-namespace Artistan\ReviveXmlRpc;
+namespace Biologed\ReviveXmlRpc;
 
 /**
  *  The agencyInfo class extends the base Info class and contains information about the agency.

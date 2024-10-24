@@ -10,7 +10,7 @@
 +---------------------------------------------------------------------------+
 */
 
-namespace Artistan\ReviveXmlRpc;
+namespace Biologed\ReviveXmlRpc;
 
 use PhpXmlRpc\Value;
 

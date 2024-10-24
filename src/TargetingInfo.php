@@ -10,7 +10,7 @@
 +---------------------------------------------------------------------------+
 */
 
-namespace Artistan\ReviveXmlRpc;
+namespace Biologed\ReviveXmlRpc;
 
 /**
  * The TargetingInfo class extends the base Info class and contains

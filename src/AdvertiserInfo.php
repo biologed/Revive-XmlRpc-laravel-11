@@ -10,7 +10,7 @@
 +---------------------------------------------------------------------------+
 */
 
-namespace Artistan\ReviveXmlRpc;
+namespace Biologed\ReviveXmlRpc;
 
 /**
  *  The AdvertiserInfo class extends the base Info class and contains information about advertisers.

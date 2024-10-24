@@ -6,7 +6,7 @@
  * --------------------------------------------------------------------------
 */
 
-if (! function_exists('env')) {
+if (!function_exists('env')) {
     function env($key, $default)
     {
         return $default;

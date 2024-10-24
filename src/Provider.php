@@ -1,6 +1,6 @@
 <?php
 
-namespace Artistan\ReviveXmlRpc;
+namespace Biologed\ReviveXmlRpc;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -17,12 +17,9 @@ class Provider extends ServiceProvider
      */
     public function boot()
     {
-        // laravel function to publish configuration assets
-        if (function_exists('base_path')) {
-            $this->publishes([
-                __DIR__.'/Assets/Config' => base_path('config'),
-            ]);
-        }
+        $this->publishes([
+            __DIR__.'/../config/config.php' => config_path('revive-xmlrpc.php'),
+        ], 'revive-xmlrpc-config');
     }
 
     /**

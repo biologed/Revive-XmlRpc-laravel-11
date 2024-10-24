@@ -10,7 +10,7 @@
 +---------------------------------------------------------------------------+
 */
 
-namespace Artistan\ReviveXmlRpc;
+namespace Biologed\ReviveXmlRpc;
 
 use PhpXmlRpc\Client;
 use PhpXmlRpc\Encoder;
@@ -140,18 +140,14 @@ class OpenAdsV2ApiXmlRpc
     /**
      * pass a configuration array to the class directory
      *
-     * @param $config
+     * @param array|null $config
      */
-    function load_config($config)
+    function load_config(?array $config = [])
     {
         // get the default configs directly from the config file
-        $this->config = require __DIR__.'/Assets/Config/revive-xmlrpc.php';
-        // allow override default configs with laravel type configs from project
-        if (function_exists('config')) {
-            $this->config = array_merge($this->config, config('revive-xmlrpc'));
-        }
+        $this->config = require __DIR__.'/../config/config.php';
         // allow the passed config array to override everything
-        if (is_array($config) && ! empty($config)) {
+        if (is_array($config) && !empty($config)) {
             $this->config = array_merge($this->config, $config);
         }
     }
